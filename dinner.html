@@ -41,19 +41,19 @@ function draw() {
 }
 
 function dialog() {
-	var a = "Alex";
-	var s = "Sam";
+	var a = "Ryan";
+	var s = "Mahima";
 	
-	say(s, "Omg, I'm so glad we finally are out!");
-	say(a, "Yea, It is crazy");
-	say(s, "I can't believe just a few weeks ago, we were just meeting at that bowling alley");
-	say(a, "Yea I know, and bowling is lametown USA");
+	say(s, "Omg, I'm so glad we finally are out on a date!");
+	say(a, "Yea, It's been a while");
+	say(s, "I can't believe just 3 months ago, I said yes to dating you");
+	say(a, "Yea I know, and we met eachother over a year ago");
 	say(s, "I'm having such a great time");
 	say(a, "Same");
 	
 	var shouldHoldHand = false;
 	do {
-		var r = prompt("Should Alex hold your hand?\n\n1:yes\n2:no", "");
+		var r = prompt("Should Ryan hold your hand?\n\n1:yes\n2:no", "");
 		if(r == "1")
 			shouldHoldHand = true;
 		else
@@ -61,7 +61,7 @@ function dialog() {
 	}
 	while(!shouldHoldHand);
 	
-	say(s, "Ew omg gross, can I have my hand back?");
+	say(s, "Ew omg your hand is so cold like why aren't they warm");
 	clearInterval(interval);
 	window.location = 'goinghome.html';
 }
