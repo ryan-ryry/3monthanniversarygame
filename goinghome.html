@@ -31,16 +31,16 @@ function draw() {
 }
 
 function dialog() {
-	var a = "Alex";
-	var s = "Sam";
+	var a = "Ryan";
+	var s = "Mahima";
 	
-	say(a, "Were home.. that was a fun night");
-	say(s, "Yea i had alot of fun");
-	say(a, "** Kiss her you pansy **");
+	say(a, "We're home.. that was a fun night");
+	say(s, "Yea I had a lot of fun");
+	say(a, "** I have something to tell you, come close **");
 	
 	var shouldKiss = true;
 	do {
-		var r = prompt("Should Alex kiss you?\n\n1:yes\n2:no", "");
+		var r = prompt("Should Ryan kiss you?\n\n1:yes\n2:no", "");
 		if(r == "1")
 			shouldKiss = true;
 		else
@@ -57,7 +57,7 @@ function dialog() {
 	car_driving.img = kissing;
 	
 	window.setTimeout(function() {
-		alert("SAM KISSED ALEX FIRST!!!!");
+		alert("MAHIMA GAVE RYAN A BIG FAT SMOOCH!!!");
 	}, 1500);
 	
 	window.setTimeout(function() {
