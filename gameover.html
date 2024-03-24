@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 	<canvas id="graphics" style="position:absolute; top:0; left:0;"></canvas>
@@ -45,15 +45,13 @@ function runIntro() {
 	}, 4500);
 	
 	window.setTimeout(function() {
-		context.clearRect(0,0,canvas.width,canvas.height);
 		var end = new Image();
 		end.onload = function() {
-			window.setTimeout(function() {
-				context.drawImage(end, canvas.width/2-220, canvas.height/2-100);
-			},6000 );
+			context.clearRect(0,0,canvas.width,canvas.height);
+			context.drawImage(end, canvas.width/2-220, canvas.height/2-100);
 		}
 		end.src = 'content/happyanniversary.png';
-	}, 0);	
+	}, 6000);	
 }
 </script>
 </html>
