@@ -10,8 +10,8 @@
 </html>
 
 <script>
-say("Mom", "SAM! Wake up! Alex is on his way, get Dressed");
-alert("Use W S A D to move");
+say("Mahima thinking", "I need to get dressed! Ryan's coming to pick me up!");
+alert("Use W A S D to move");
 var step = 10;
 
 var sam_down = "content/sam/front.png";
@@ -99,11 +99,11 @@ function getDressed() {
 		var reply = prompt("What will you wear?\n1. T-shirt\n2. Turtle-neck Sweater\n3. Dress", "3");
 		switch(reply) {
 		case "1":
-			alert("T-shirt... Really? Guess you're not trying tonight!");
+			alert("T-shirt... Really? Do you wanna look good or not?");
 			clothes = "T-shirt";
 		break;
 		case "2":
-			alert("Turtle-neck? I don't think this is going to last...");
+			alert("Turtle-neck? Not a bad choice but could be better");
 			clothes = "Turtle-neck";
 		break;
 		case "3":
@@ -114,7 +114,7 @@ function getDressed() {
 		dressed = true;
 		
 		if(!done)
-			alert("If you havn't, head over to the mirror and fix your hair or the shoes to pick out shoes");
+			alert("If you haven't, head over to the mirror and fix your hair or the shoes to pick out shoes");
 	}
 }
 
@@ -124,25 +124,25 @@ function fixHair() {
 	
 	if(!hairDone && $.inArray(sam.topLeft.x, mirrorRangeX) != -1 && $.inArray(sam.topLeft.y, mirrorRangeY) != -1) {
 		alert("Time to fix your hair.");
-		var reply = prompt("How will it look?\n1. Bun\n2. Pony-tail\n3. Straight", "3");
+		var reply = prompt("How will it look?\n1. Bun\n2. Wavy curled\n3. Straight down", "3");
 		switch(reply) {
 		case "1":
 			alert("Bun... Really? A BUN???!!");
 			hair = "Bun";
 		break;
 		case "2":
-			alert("Pony-tail? What are you going to paint a room?");
-			hair = "Pony-tail";
+			alert("Wavy curled? You know I love when you do your hair like that");
+			hair = "Wavy curled";
 		break;
 		case "3":
-			alert("Straight? Sounds good to me!");
-			hair = "Straight";
+			alert("Straight down sounds good to me!");
+			hair = "Straight down";
 		break;
 		}
 		hairDone = true;
 		
 		if(!done)
-			alert("If you havn't, head over to the dresser to get dressed or the shoes to pick out shoes");
+			alert("If you haven't, head over to the dresser to get dressed or the shoes to pick out shoes");
 	}
 }
 
@@ -163,14 +163,14 @@ function pickShoes() {
 			shoes = "Flip-flops";
 		break;
 		case "3":
-			alert("Heels... That a girl :)");
+			alert("Heels... Now you're looking cute :)");
 			shoes = "Heels";
 		break;
 		}
 		shoesPicked = true;
 		
 		if(!done)
-			alert("If you havn't, head over to the dresser to get dressed or the mirror to fix your hair");
+			alert("If you haven't, head over to the dresser to get dressed or the mirror to fix your hair");
 	}
 }
 
